@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* McMaster brand colors */
+:root {
+  --maroon: #7a003c;
+  --maroon-light: #ac1455;
+  --maroon-dark: #56002a;
+  --gold: #fdbf57;
+  --grey-light: #efefef;
+  --grey-cool: #dbdbdd;
+  --grey-medium: #aeb4b8;
+  --grey: #5e6a71;
+  --grey-dark: #222222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Roboto Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
