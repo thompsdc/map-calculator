@@ -121,13 +121,13 @@ const courseListings = {
             "PHYSICS": [
                 {
                     "courseCode": "PHYSICS 1A03",
-                    "courseDesc": "A first course in university physics, taught using examples and applications from many areas of science. Topics include the concepts of force and energy, mechanics, waves and fluids.\nThree hours (lectures, web modules), one lab (two hours) every other week; one term \nPHYSICS 1V03 when offered is considered equivalent to PHYSICS 1A03 and 1C03",
+                    "courseDesc": "A first course in university physics, taught using examples and applications from many areas of science. Topics include the concepts of force and energy, mechanics, waves and fluids.\nThree hours (lectures, web modules), one lab (two hours) every other week; one term\nNote: PHYSICS 1V03 is an online course, when offered, considered equivalent to PHYSICS 1A03 and 1C03.",
                     "courseID": 27,
                     "courseName": "Introductory Physics"
                 },
                 {
                     "courseCode": "PHYSICS 1C03",
-                    "courseDesc": "A first course in university physics intended for physics and chemistry students, or students in any other discipline who have an appropriate secondary school background. This course is a comprehensive treatment of linear and rotational mechanics - kinematics, dynamics, and the relevant conservation laws.\nThree lectures, one lab (two hours) every week; one term",
+                    "courseDesc": "A first course in university physics intended for physics and chemistry students, or students in any other discipline who have an appropriate secondary school background. This course is a comprehensive treatment of linear and rotational mechanics - kinematics, dynamics, and the relevant conservation laws.\nThree lectures, one lab (two hours) every week; one term\nNote: PHYSICS 1V03 is an online course, when offered, considered equivalent to PHYSICS 1A03 and 1C03.",
                     "courseID": 29,
                     "courseName": "Physics for the Chemical and Physical Sciences"
                 }
@@ -305,7 +305,7 @@ const courseListings = {
             "PHYSICS": [
                 {
                     "courseCode": "PHYSICS 1A03",
-                    "courseDesc": "A first course in university physics, taught using examples and applications from many areas of science. Topics include the concepts of force and energy, mechanics, waves and fluids.\nThree hours (lectures, web modules), one lab (two hours) every other week; one term \nPHYSICS 1V03 when offered is considered equivalent to PHYSICS 1A03 and 1C03",
+                    "courseDesc": "A first course in university physics, taught using examples and applications from many areas of science. Topics include the concepts of force and energy, mechanics, waves and fluids.\nThree hours (lectures, web modules), one lab (two hours) every other week; one term\nNote: PHYSICS 1V03 is an online course, when offered, considered equivalent to PHYSICS 1A03 and 1C03.",
                     "courseID": 27,
                     "courseName": "Introductory Physics"
                 },

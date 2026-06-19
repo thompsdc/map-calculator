@@ -335,7 +335,7 @@ const courses: Course[] = [
             "fall": true,
             "winter": true
         },
-        "timetable": "Three hours (lectures, web modules), one lab (two hours) every other week, PHYSICS 1V03 when offered is considered equivalent to PHYSICS 1A03 and 1C03; one term"
+        "timetable": "Three hours (lectures, web modules), one lab (two hours) every other week; one term\nNote: PHYSICS 1V03 is an online course, when offered, considered equivalent to PHYSICS 1A03 and 1C03."
     },
     {
         "code": "PHYSICS 1AA3",
@@ -359,7 +359,7 @@ const courses: Course[] = [
             "fall": true,
             "winter": false
         },
-        "timetable": "Three lectures, one lab (two hours) every week; one term"
+        "timetable": "Three lectures, one lab (two hours) every week; one term\nNote: PHYSICS 1V03 is an online course, when offered, considered equivalent to PHYSICS 1A03 and 1C03."
     },
     {
         "code": "PHYSICS 1CC3",
@@ -444,6 +444,18 @@ const courses: Course[] = [
             "winter": true
         },
         "timetable": "Three lectures; one term"
+    },
+    {
+        "code": "PHYSICS 1V03",
+        "description": "A first course in university physics covering concepts from both PHYSICS 1A03 and 1C03. Topics include mechanics, waves, fluids, and additional topics from 1C03. Considered equivalent to PHYSICS 1A03 and PHYSICS 1C03.",
+        "id": 37,
+        "name": "Introductory Physics",
+        "source": "Honours Astrophysics",
+        "term": {
+            "fall": true,
+            "winter": false
+        },
+        "timetable": "When offered; one term"
     }
 ]
 
