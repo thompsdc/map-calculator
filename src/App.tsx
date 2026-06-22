@@ -83,6 +83,8 @@ function App() {
               selectedCourses={store.selectedCourses}
               onRemoveCourse={store.removeCourse}
               onSubmit={handleSubmit}
+              termCounts={store.termCounts}
+              maxPerTerm={store.maxPerTerm}
             />
           </div>
         </div>

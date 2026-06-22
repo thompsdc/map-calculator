@@ -7,11 +7,13 @@ interface CourseCartProps {
   selectedCourses: CourseListing[];
   onRemoveCourse: (courseId: number, season: string) => void;
   onSubmit: () => void;
+  termCounts: Record<string, number>;
+  maxPerTerm: number;
 }
 
-export function CourseCart({ selectedCourses, onRemoveCourse, onSubmit }: CourseCartProps) {
+export function CourseCart({ selectedCourses, onRemoveCourse, onSubmit, termCounts, maxPerTerm }: CourseCartProps) {
   const cartRef = useRef<HTMLHeadingElement>(null);
-  const isValid = selectedCourses.length > 0 && selectedCourses.length < 16;
+  const isValid = selectedCourses.length > 0;
 
   const handleSubmit = () => {
     if (isValid) {
@@ -36,6 +38,14 @@ export function CourseCart({ selectedCourses, onRemoveCourse, onSubmit }: Course
       </div>
 
       <div className="bg-[#efefef] border-t-[6px] border-[#fdbf57] shadow-lg min-h-[36vh] relative flex flex-col">
+        <div className="flex gap-3 px-3 pt-2 text-xs font-medium text-[#5e6a71]">
+          <span className={termCounts.fall >= maxPerTerm ? 'text-red-600' : ''}>
+            Fall: {termCounts.fall}/{maxPerTerm}
+          </span>
+          <span className={termCounts.winter >= maxPerTerm ? 'text-red-600' : ''}>
+            Winter: {termCounts.winter}/{maxPerTerm}
+          </span>
+        </div>
         <div className="p-2 flex-1 overflow-y-auto pb-16">
           {selectedCourses.length > 0 ? (
             selectedCourses.map((course) => (
@@ -62,7 +72,7 @@ export function CourseCart({ selectedCourses, onRemoveCourse, onSubmit }: Course
 
       {selectedCourses.length > 0 && !isValid && (
         <p className="text-red-600 text-sm mt-2" role="alert">
-          You must add between 1 and 15 courses to your cart.
+          You must add at least 1 course to your cart.
         </p>
       )}
     </div>
